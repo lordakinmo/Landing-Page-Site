@@ -1,0 +1,91 @@
+body {
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    margin: 100px 50px;
+}
+
+main .sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+ main .suv {
+     background-color: hsl(184, 100%, 22%);
+ }
+main .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 0px 10px 10px;
+}
+main img {
+    width: 30%;
+}
+
+main .carType {
+    color: hsl(0, 0%, 95%);
+    clear: both;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+}
+main .carInfo {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 2em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400px;
+}
+.container .btn {
+   border-radius: 30px;
+   width: 8em;
+   height: 3em;
+}
+.container button {
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container .btn-sedan {
+    color:hsl(31, 77%, 52%);  
+}
+.container .btn-sedan:hover {
+    background-color:hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.container .btn-suv {
+    color: hsl(184, 100%, 22%);
+}
+.container .btn-suv:hover {
+    background-color:hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.container .btn-luxury {
+    color:hsl(179, 100%, 13%);
+}
+.container .btn-luxury:hover {
+    background-color:hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+@media (min-width: 992px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    main .sedan {
+        border-radius: 10px 0 0 10px;
+    }
+    main .luxury {
+        border-radius: 0 10px 10px 0;
+    }
+    main .carInfo {
+        margin-bottom: 70px;
+    }
+
+}
